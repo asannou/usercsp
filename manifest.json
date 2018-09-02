@@ -1,0 +1,26 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "{1809716c-a7ab-47c5-9544-7ff22c13da5c}"
+    }
+  },
+  "description": "User-defined Content Security Policy",
+  "manifest_version": 2,
+  "name": "UserCSP",
+  "version": "1.0",
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  }
+}
